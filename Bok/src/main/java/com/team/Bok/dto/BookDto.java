@@ -1,20 +1,12 @@
-package com.team.Bok.model;
+package com.team.Bok.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
 import java.time.LocalDateTime;
-
 @Getter
 @Setter
-
-@Entity
-@Table(name = ("book"))
-
-public class Book {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class BookDto {
     private Integer id;
     private String author;
     private String title;

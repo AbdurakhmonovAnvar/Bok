@@ -1,18 +1,11 @@
-package com.team.Bok.model;
+package com.team.Bok.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
-
 @Getter
 @Setter
-
-@Entity
-@Table(name = ("customer"))
-public class Customer {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CustomerDto {
     private Integer id;
 
     private String name;
@@ -21,5 +14,4 @@ public class Customer {
     private String contact;
     private Boolean city;
     private String email;
-
 }
