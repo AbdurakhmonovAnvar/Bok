@@ -12,7 +12,7 @@ public class BookDto {
     private String title;
     private Double price;
     private String image;
-    private LocalDateTime published_at;
+
 
 
 }
